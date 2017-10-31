@@ -58,6 +58,12 @@ Another filtering selector, `:contains(text)`, selects elements that have a cert
 
 **Note:** In the jQuery selector, `World` is in single-quotes because it is already inside a pair of double-quotes. Always use single-quotes inside double-quotes to avoid unintentionally ending a string.
 
+Selecting with custom data attributes:
+
+`<p class="selector" data-color="blue">Paragraph with a class.</p>`<br>
+`<p class="selector" data-color="red">Paragraph with a class.</p>`<br>
+`$("p[data-color='blue']").css("color", "blue"); // colors the text blue`
+
 These are just a few of the selectors available for use in jQuery. See the More Information section for a link to the complete list on the jQuery website.
 
 #### More Information:
